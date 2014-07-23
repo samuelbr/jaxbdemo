@@ -1,7 +1,9 @@
 package com.github.samuelbr.jaxbdemo.entity;
 
 import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlType;
 
+@XmlType(name="Author")
 public class Author {
 
 	private String name;

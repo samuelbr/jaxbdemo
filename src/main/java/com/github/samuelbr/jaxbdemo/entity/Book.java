@@ -1,8 +1,8 @@
 package com.github.samuelbr.jaxbdemo.entity;
 
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
-@XmlRootElement(name="Book", namespace="com.github.samuelbr.jaxbdemo")
+@XmlType(name="Book")
 public class Book {
 
 	private Author author;

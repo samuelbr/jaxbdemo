@@ -2,12 +2,12 @@ package com.github.samuelbr.jaxbdemo.entity;
 
 import java.util.Collection;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
-@XmlRootElement(name="BookStore", namespace="com.github.samuelbr.jaxbdemo")
+@XmlRootElement(name="BookStore")
+@XmlType(name="BookStore", namespace="com.github.samuelbr.jaxbdemo")
 public class BookStore {
 
 	private Collection<Book> books;
